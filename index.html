@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fef3c7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f97316;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background-color: #f97316;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ea580c;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .section {
+            margin-top: 30px;
+        }
+        .section h3 {
+            color: #f97316;
+        }
+        .link {
+            color: #f97316;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>Welcome to My Peronal Website! 🧡</header>
+    <div class="container">
+        <h2>Hello, I'm Lani! 😊</h2>
+        <p>Click the button below for a surprise message!</p>
+        <button onclick="showMessage()">Click Me!</button>
+        <p id="message"></p>
+
+        <div class="section">
+            <h3>All About Me</h3>
+            <p>I'm passionate about traveling and Pinterest. I love to explore new things, meet new people, and always stay positive!</p>
+        </div>
+
+        <body>
+            <header>Education & Career Plans</header>
+            <div class="container">
+                <h2>My Education & Career Journey</h2>
+                <div class="section education">
+                    <h3>Education</h3>
+                    <p>I am currently pursuing a Bachelor's in Business Administration with Concentrations in Marketing and Finance at Gonzaga Univeristy. I chose this path because I am passionate about the creativity that the field of marketing entails and the logisitic, mathematical aspects of finance.  I look forward to deepening my knowledge and skills throughout my studies.</p>
+                    <p>My education has given me the opportunity to explore various aspects of marketing and finance through courses like Principles of Marketing & Finance, Consumer Behavior, Financial Anaylsis, Digital Marketing, etc., and I am eager to learn more about Intermediate Finance & Marketing Analysis.</p>
+                </div>
+        
+                <div class="section career-plans">
+                    <h3>Career Plans</h3>
+                    <p>In the future, I hope to work as a marekting analyst, where I can apply the skills I've gained in my education to make an impact. My career goal is to contribute to beauty company, particularly in beauty marekting and communication.</p>
+                    <p>I'm excited about the potential for growth in the beauty marketing industry and am determined to work on projects that consumer behavior and development and creative usage of social media and promotions. My ideal job would involve having creative freedom, working with others, and having fun!.</p>
+                    <p> Along the way, I also plan to expand my knowledge in marketing and finance. I want to understand how to create effective marketing strategies and manage financial resources efficiently. I believe that staying updated with trends, learning new tools, and understanding market behavior will help me grow. Continuous learning and adaptability are key in any career, and I'm committed to evolving along with my field to stay relevant and make informed decisions.</p>
+        
+            </div>
+        </body
+
+
+        <div class="section">
+            <h3>My Hometown: Snohomish, WA</h3>
+            <p>Want to learn more about my hometown? <a href="hometown.html" class="link" target="_blank">Click here to read more!</a></p>
+        </div>
+
+    <script>
+        function showMessage() {
+            const messages = [
+                "You're amazing! 💖",
+                "Keep smiling! 😊",
+                "Believe in yourself! 🌟",
+                "You can achieve anything! 💪",
+                "Have a fantastic day! 🌈"
+            ];
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById("message").innerText = randomMessage;
+        }
+    </script>
+</body>
+</html>
